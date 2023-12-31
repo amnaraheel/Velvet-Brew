@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Velvet Brew | About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="about-us.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+        <img src="./images/Logo.jpeg" alt="Logo" style="width:40%; margin-left:-100px;">
+    </div>
+    <nav>
+        <a href="https://velvetbrew.bigbottech.com/index.html">Home</a>
+        <a href="https://velvetbrew.bigbottech.com/menus.html">Menus</a>
+        <a href="https://velvetbrew.bigbottech.com/about-us.html">About Us</a>
+        <a href="https://velvetbrew.bigbottech.com/contact-us.html">Contact Us</a>
+        <button class="book-table-button"><a href="https://velvetbrew.bigbottech.com/index.html#booking-form">Book a Table</a></button>
+    </nav>
+  </header>
+  
+  <div class="mobile-container">
+    <div class="topnav">
+        <a href="https://velvetbrew.bigbottech.com/index.html" class="logo-link">
+            <img src="./images/Logo.jpeg" class="mobile-logo" alt="Logo">
+        </a>
+        <div class="mobile-menu">
+            <div id="myLinks" class="myLinks">
+                <a href="https://velvetbrew.bigbottech.com/index.html">Home</a>
+                <a href="https://velvetbrew.bigbottech.com/menus.html">Menus</a>
+                <a href="https://velvetbrew.bigbottech.com/about-us.html">About Us</a>
+                <a href="https://velvetbrew.bigbottech.com/contact-us.html">Contact Us</a>
+                <a href="https://velvetbrew.bigbottech.com/index.html#booking-form">Book a Table</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+  <div class="container-1">
+    <div class="background-image">
+      <div class="overlay">
+        <div class="text">
+          <h1>ABOUT US</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-2">
+    <div class="column">
+      <img class="image one" src="./images/1.jpg" alt="Image 1">
+    </div>
+    <div class="column text-column">
+      <div class="text">
+        <h3>WELCOME TO VELVET BREW</h3>
+        <h2>THE GREAT TEA PARTY</h2>
+        <p>Introducing the Velvet Brew Café, a charmingly elegant café located within The Landmark, 5th Avenue flagship store. Inspired by the iconic heritage, we offer three signature culinary experiences for elevated daytime dining.</p>
+        <button class="book-table-button"><a href="https://velvetbrew.bigbottech.com/index.html#booking-form">Book a Table</a></button>
+      </div>
+    </div>
+    <div class="column">
+      <img class="image two" src="./images/2.jpg" alt="Image 2">
+    </div>
+  </div>
+
+  <div class="container-3">
+    <div class="columns">
+      <img class="images" src="./images/4.jpg" alt="Image 4">
+      <h3>QUALITY & BALANCE</h3>
+      <h2>OUR FOOD PHILOSOPHY</h2>
+      <p class="texts">Simple and balanced. Delicious and enticing dishes with high-quality ingredients. Alexander Petillo brings together flavors and specialties from Italy and beyond to create his own culinary world, full of surprising artistry.</p>
+      <button class="book-table-button"><a href="https://velvetbrew.bigbottech.com/index.html#booking-form">Book a Table</a></button>
+    </div>
+    <div class="columns">
+      <img class="images" src="./images/5.jpg" alt="Image 5">
+      <h3>QUALITY & BALANCE</h3>
+        <h2>AFTERNOON TEA PARTIES</h2>
+      <p class="texts">Experience the elegance of our Royal Afternoon Tea, perfect for groups of 10-100 guests. Join us between 12 noon and 5 pm for an indulgent experience, priced at £70 per person. Revel in sophistication and savor delightful culinary offerings.</p>
+      <button class="book-table-button"><a href="https://velvetbrew.bigbottech.com/index.html#booking-form">Book a Table</a></button>
+    </div>
+  </div>
+
+  <div class="container-4">
+    <div class="image-container">
+      <img class="img" src="./images/7.jpg" alt="Image 6">
+      <img class="img" src="./images/8.jpg" alt="Image 7">
+      <img class="img" src="./images/9.jpg" alt="Image 8">
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-column footer-logo">
+        <img src="./images/Logo.jpeg" alt="Logo">
+    </div>
+
+    <div class="footer-column quick-links">
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="https://velvetbrew.bigbottech.com/menus.html#tea-and-drinks">Tea & Drinks</a></li>
+            <li><a href="https://velvetbrew.bigbottech.com/menus.html#afternoon-tea">Afternoon Tea</a></li>
+            <li><a href="https://velvetbrew.bigbottech.com/menus.html#special-drinks">Special Drinks</a></li>
+            <li><a href="https://velvetbrew.bigbottech.com/menus.html#desserts">Desserts</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-column contact-info">
+        <h2>Contact Us</h2>
+        <p>Email: info@velvetbrewcafe.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+  </footer>
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      var icon = document.querySelector('.icon i');
+      
+      if (x.style.display === "block") {
+        x.style.display = "none";
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      } else {
+        x.style.display = "block";
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      }
+    }
+</script>
+
+</body>
+</html>
